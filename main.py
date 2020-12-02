@@ -89,7 +89,7 @@ for e in range(epochs):
             env.state2string(inp[:, np.newaxis])
             print("Target:", tar)
     
-# Save trained model weights and architecture, this will be used by the visualization code
+# Save trained model weights and architecture
 print("Done training. Time elapsed: {:.2f} hours.".format((time() - ti)/3600))
 print("Saving model...")
 model.save("model")
